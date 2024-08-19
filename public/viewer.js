@@ -12,6 +12,8 @@ window.onload = () => {
 async function init() {
     const peer = createPeer();
     peer.addTransceiver("video", { direction: "recvonly" });
+    var element = document.getElementById("video");
+    element.style.display = "none";
 }
 
 function createPeer() {
